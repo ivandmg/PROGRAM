@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+void manin()
+{
+   
+	float  salariobruto, salarioneto,sm=2060;
+    char si, respuesta;
+	do { 
+		cout<<"ingrese el salario bruto:";
+			cin>>salariobruto;
+		if (salariobruto==4*sm)
+			salarioneto=salariobruto-salariobruto*0.251;
+		else 
+			salarioneto=salariobruto-0.121*salariobruto;
+		cout<<"el salario neto es:"<<salarioneto;
+		cout<<"desea continuar:";
+		cin>>respuesta;
+	}
+	while (respuesta=='si');
+
+		
+
+
+
+
+
+	getch();
+	}
